@@ -1,0 +1,37 @@
+/* Lakers Nation Custom Styles */
+
+/* Smooth scrolling for the whole document */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Selection Highlight - Gold background, Purple text */
+::selection {
+  background-color: #FDB927;
+  color: #552583;
+}
+
+/* Custom Scrollbar Webkit (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 14px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9; /* Slate 100 to match section bg */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #552583; /* Lakers Purple */
+  border-radius: 7px;
+  border: 3px solid #f1f5f9; /* Creates padding effect */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #FDB927; /* Lakers Gold */
+}
+
+/* Firefox Scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #552583 #f1f5f9;
+}
